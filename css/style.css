@@ -1,0 +1,455 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 14px;
+	color: #212121;
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+
+ul, li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #212121;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+input::placeholder {
+	color: #C4C4C4;
+}
+
+:focus {
+	outline: none;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+.container {
+	width: 1150px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.row {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.nav {
+	border-bottom: 1px solid #E3E3E3;
+	margin-bottom: 20px;
+}
+
+.nav .row {
+	justify-content: space-between;
+}
+
+
+.toggle-menu {
+	display: none;
+}
+
+
+.nav .menu {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.nav .menu li a {
+	color: #212121;
+    padding: 24px 15px;
+    display: block;
+    border-top: 1px solid transparent;
+    position: relative;
+    font-weight: 400;
+}
+
+.nav .menu li a:hover {
+	border-top: 1px solid #27A988;
+	text-shadow: 1px 0 0 currentColor;
+}
+
+.nav .search {
+    display: flex;
+    padding: 24px 15px;
+    border-left: 1px solid #E3E3E3;
+    border-right: 1px solid #E3E3E3;
+    justify-content: center;
+}
+
+.nav .search input {
+    border: none;
+    outline: none;
+    width: 80%;
+}
+
+.nav .search button {
+	background: none;
+    border: none;
+    cursor: pointer;
+    color: #27A988;
+}
+
+#reviews {
+	background: #F9F9F9;
+	text-align: center;
+	padding: 30px 0;
+}
+
+#reviews h1 {
+	font-size: 30px;
+	font-weight: 800;
+}
+
+#reviews span {
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: 0.16em;
+	color: #fff;
+}
+
+#reviews hr {
+	width: 84px;
+    border: 1px solid #27A988;
+}
+#reviews p {
+	line-height: 170.9%
+}
+
+#reviews .row {
+	padding: 40px 0;
+}
+
+#reviews .item {
+	padding: 0 6px;
+}
+#reviews .item .sub-item {
+	background: #fff;
+	padding: 20px 30px;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+	border-radius: 5px;
+}
+
+#reviews .item .sub-item .top span {
+	text-align: right;
+	display: block;
+	color: #C4C4C4;
+	font-size: 14px;
+}
+
+#reviews .item .sub-item .item-body .fa {
+	width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #CFFFF3;
+    color: #27A988;
+    line-height: 48px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#reviews .item .sub-item .item-body h2 {
+	text-align: left;
+	font-size: 24px;
+}
+
+#reviews .item .sub-item .item-body p {
+	line-height: 22px;
+    color: #000000;
+    text-align: left;
+}
+
+#reviews .item .sub-item .item-body a {
+	border: 0.5px solid #27A988;
+    border-radius: 5px;
+    display: block;
+    padding: 15px;
+    color: #27A988;
+}
+
+#reviews .item .sub-item .item-body a:hover {
+	background: #27A988;
+	color: #fff;
+}
+
+.box-link-more a {
+	border-bottom: 1px solid #27A988;
+    padding: 10px 0;
+}
+
+
+/* Footer */
+#footer {
+	padding: 30px 0;
+}
+
+#footer .contact .list-contact li {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 27px;
+}
+
+#footer .contact .list-contact li.last {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+#footer .contact .list-contact li .fa {
+	width: 33px;
+    height: 33px;
+    background: #CFFFF3;
+    color: #27A988;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 34px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#footer .nav {
+	border-bottom: none;
+}
+
+#footer .nav .foot-list li a {
+	border: none;
+	font-weight: 400;
+	padding: 24px 0;
+}
+
+#footer .nav .menu {
+	justify-content: space-between;
+}
+
+
+#footer .nav .foot-list li a:hover {
+	border: none;
+    color: #000;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+#footer .copyright {
+	line-height: 15px;
+	text-align: center;
+	color: #C4C4C4;
+}
+/* End Footer */
+
+
+.grid-1 {
+	flex-basis: 8.333%;
+}
+.grid-2 {
+	flex-basis: 16.667%;
+}
+.grid-3 {
+	flex-basis: 25%;
+}
+.grid-4 {
+	flex-basis: 33.333%;
+}
+.grid-5 {
+	flex-basis: 41.667%;
+}
+.grid-6 {
+	flex-basis: 50%;
+}
+.grid-7 {
+	flex-basis: 58.333%;
+}
+.grid-8 {
+	flex-basis: 66.667%;
+}
+.grid-9 {
+	flex-basis: 75%;
+}
+.grid-10 {
+	flex-basis: 83.333%;
+}
+.grid-11 {
+	flex-basis: 91.667%;
+}
+
+.grid-12 {
+	flex-basis: 100%;
+}
+
+
+
+
+@media (max-width: 1170px) {
+	.container {
+		width: 950px;
+	}
+
+	.nav .search input {
+		width: 75%;
+	}
+}
+
+
+@media (max-width: 1024px) {
+	.container {
+		width: 767px;
+	}
+
+	#reviews .item .sub-item .item-body h2 {
+		font-size: 18px;
+	}
+
+	.nav .menu {
+		flex-wrap: wrap;
+	}
+
+	.nav .menu li a {
+		padding: 24px 0;
+	}
+
+	.nav .search {
+		padding: 24px 10px;
+	}
+
+	.nav .search button {
+		padding: 0;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
+	
+	#footer .nav .menu {
+		display: block !important;
+		background: none;
+	}
+
+	#footer .nav .menu li a {
+	    color: #212121;
+	    border-bottom: 1px solid #212121;
+	}
+
+	#footer .nav .menu li a:hover {
+		border-bottom: 1px solid #27a988;
+		color: #27a988;
+	}
+	.nav .menu {
+		display: none;
+	}
+
+
+	.nav .menu {
+		flex-direction: column;
+		padding: 20px;
+		background: #27a988;
+	}
+
+	.nav .menu li a {
+		color: #f9f9f9;
+		padding: 15px 0;
+		border-bottom: 1px solid #fff;
+	}
+
+	.nav .toggle-menu button .line {
+		border-top: 2px solid #27a988;
+	    margin-bottom: 4px;
+	    display: block;
+	}
+
+	.nav .toggle-menu button {
+		border: 2px solid #27a988;
+	    display: block;
+	    width: 40px;
+	    border-radius: 5px;
+	    padding: 8px 9px 5px 9px;
+	    background: none;
+	    cursor: pointer;
+	}
+
+	.nav .row {
+		flex-direction: column-reverse;
+	}
+
+	.toggle-menu {
+		display: block;
+		position: absolute;
+		top: 17px;
+    	left: 20px;
+	}
+
+	.nav .search {
+		justify-content: flex-end;
+	}
+
+	#reviews .item {
+		padding: 0 15px;
+		margin-bottom: 30px;
+	}
+
+	.grid-sm-1 {
+		flex-basis: 8.333%;
+	}
+	.grid-sm-2 {
+		flex-basis: 16.667%;
+	}
+	.grid-sm-3 {
+		flex-basis: 25%;
+	}
+	.grid-sm-4 {
+		flex-basis: 33.333%;
+	}
+	.grid-sm-5 {
+		flex-basis: 41.667%;
+	}
+	.grid-sm-6 {
+		flex-basis: 50%;
+	}
+	.grid-sm-7 {
+		flex-basis: 58.333%;
+	}
+	.grid-sm-8 {
+		flex-basis: 66.667%;
+	}
+	.grid-sm-9 {
+		flex-basis: 75%;
+	}
+	.grid-sm-10 {
+		flex-basis: 83.333%;
+	}
+	.grid-sm-11 {
+		flex-basis: 91.667%;
+	}
+
+	.grid-sm-12 {
+		flex-basis: 100%;
+	}
+}
